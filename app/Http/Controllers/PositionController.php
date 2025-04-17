@@ -59,13 +59,11 @@ class PositionController extends Controller
             ->with('success', 'Position created successfully.');
     }
 
-
     public function edit(Position $position)
     {
         return view('positions.edit', compact('position'));
 
     }
-
 
     public function update(Request $request, Position $position)
     {

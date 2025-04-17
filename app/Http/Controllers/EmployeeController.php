@@ -133,7 +133,7 @@ class EmployeeController extends Controller
             'name' => 'required|string|max:255',
             'position_id' => 'required|exists:positions,id',
             'date_of_employment' => 'required|date',
-            'phone' => 'required|string|max:20',
+            'phone' => 'required|string|max:20|regex:/^\+380\d{9}$/',
             'email' => 'required|email|unique:employees,email,' . $employee->id,
             'salary' => 'required|numeric|min:0|max:500000',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
