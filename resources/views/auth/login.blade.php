@@ -6,7 +6,7 @@
     <div class="d-flex align-items-center justify-content-center min-vh-100">
         <div class="login-box">
             <div class="login-logo">
-                <a href="{{ url('/login') }}"><b>Test</b>Task</a>
+                <a href="https://testtask-production.up.railway.app/login"><b>Test</b>Task</a>
             </div>
             <div class="card">
                 <div class="card-body login-card-body">
