@@ -43,7 +43,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: "{{ route('employees.data') }}",
+                    url: "https://testtask-production.up.railway.app/employees/data",
                     type: "GET",
                     error: function(xhr, error, thrown) {
                         console.log("AJAX Error:", xhr.responseText);
